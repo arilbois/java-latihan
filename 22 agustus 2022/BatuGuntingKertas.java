@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class BatuGuntingKertas{
 	public static void main(String[] args){
-		String computerChoice = "", playerChoice,battleResult = "" , statusWinner= "", useDefenceResult = "" ,templateWinner ,templateComputerChoiceHand, templateUseDefence, hpResult= "", criticalAttackResult= "",templatePlayerChoiceHand,templatePlayerChoiceAttack, templateComputerChoice, templateDamageHp, temlateCriticalAttack, attackDamageResult= "", templateOpening, templateLine, templateKgb, templateRound, templateBattleStart, templateBattleEnd;
-		int  roll, computerAttack, playerAttack , computerDefence , playerDefence, roundStatus= 1,loseGame = 0, criticalAttack= 2, bonusHp = 2, minGetCriticalAttack = 6;
-		boolean winner=true , chekInput = true;
+		String computerChoice = "", playerChoice,battleResult = "" ,templateErrorInteger,templateErrorKGB, statusWinner= "", useDefenceResult = "" ,templateWinner ,templateComputerChoiceHand, templateUseDefence, hpResult= "", criticalAttackResult= "",templatePlayerChoiceHand,templatePlayerChoiceAttack, templateComputerChoice, templateDamageHp, temlateCriticalAttack, attackDamageResult= "", templateOpening, templateLine, templateKgb, templateRound, templateBattleStart, templateBattleEnd;
+		int  roll, computerAttack, playerAttack = 0, computerDefence , playerDefence, roundStatus= 1,loseGame = 0, criticalAttack= 2, bonusHp = 2, minGetCriticalAttack = 6;
+		boolean winner=true , chekInputKGB = true, checkInputAttack = true;
 		float computerHp = 30, playerHp = 30, damageAttack;					//hp player
 		Scanner input = new Scanner(System.in);
 		templateUseDefence = " use Deffense (Damage -";
@@ -19,6 +19,8 @@ public class BatuGuntingKertas{
 		templatePlayerChoiceHand = "Pilih tipe Serangan anda (K/G/B)";
 		templatePlayerChoiceAttack = "Tentukan Attack (2-10)";
 		templateWinner = "Battle Berakhir";
+		templateErrorInteger = "masukkan int (2-10)";
+		templateErrorKGB = "Hanya bisa K/G/B";
 
 		do				//jika belum ada winner proses bakal diulang terus
 		{
@@ -55,36 +57,41 @@ public class BatuGuntingKertas{
 
 			do{
 				playerChoice = input.next();
-
 				if(playerChoice.equalsIgnoreCase("K")){
 					playerChoice = "Kertas";
-					chekInput = false;
+					chekInputKGB = false;
 				}else if(playerChoice.equalsIgnoreCase("G")){
 					playerChoice = "Gunting";
-				chekInput = false;				//inisial G sebagai Gunting
+				chekInputKGB = false;				//inisial G sebagai Gunting
 			}else if(playerChoice.equalsIgnoreCase("B")){
 				playerChoice = "Batu";		
-				chekInput = false;			//inisial B sebagai Batu
+				chekInputKGB = false;			//inisial B sebagai Batu
 			}else{
-				System.out.println("hanya KGB");
+				System.out.println(templateErrorKGB);
+				chekInputKGB = true;	
 			}
-
-		}while(chekInput);
+		}while(chekInputKGB);
 
 		System.out.println(templatePlayerChoiceAttack);
 
-
 		do{
-				playerAttack = input.nextInt();
-			if(input.hasNextInt()){
-				chekInput = false;
+			String playerAttackContainer = input.next();
+			if (!playerAttackContainer.matches("[0-9]+")) {
+				System.out.println(templateErrorInteger);
 			}else{
-				System.out.println("hanya no");
+				playerAttack =  Integer.parseInt(playerAttackContainer);
+				if(playerAttack>=2 & playerAttack<=10){
+					checkInputAttack = false;
+				}
+				else{
+					System.out.println(templateErrorInteger);
+					checkInputAttack = true;	
+				}
 			}
-		}while(chekInput);
+		}while(checkInputAttack);
 			playerDefence = 10 - playerAttack;			//Defence adalah sisa dari serangan
-
 			System.out.println("Deffense = " + playerDefence);
+
 			System.out.println();
 			System.out.println(templateLine);
 			System.out.println(templateBattleStart);
@@ -161,7 +168,7 @@ public class BatuGuntingKertas{
 
 		if(computerHp <= loseGame){
 			System.out.println(templateWinner +" Player Win!");
-		}else if(playerHp <= loseGame){
+		}else{
 			System.out.println(templateWinner +" Computer Win!");
 		}
 	}
