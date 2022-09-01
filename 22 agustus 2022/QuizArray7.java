@@ -20,10 +20,10 @@ public class QuizArray7{
 			for(int j = i + 1; j < numbers.length; j++) {  
 				if (numbers[i] == numbers[j] &&!duplicates.contains(String.valueOf(numbers[j]))) {
 					duplicates += String.valueOf(numbers[j]) + ", ";
-				System.out.print(numbers[j] + " ");  
+					System.out.print(numbers[j] + " ");  
+				}
 			}
 		}
-	}
 
-}
+	}
 }

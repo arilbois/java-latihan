@@ -12,7 +12,6 @@ public class QuizArray4{
 		arrayValue = input.nextInt();
 		System.out.println("Disisipkan pada index ke : ");
 		indexPosisi = input.nextInt();
-		indexPosisi -= 1;
 
 		int lengthNumber = numbers.length;
 		int newArray[] = new int[lengthNumber+1];
@@ -25,8 +24,8 @@ public class QuizArray4{
 			}
 		}
 		
-
-		System.out.print("Nilai dari numbers adalah: "+Arrays.toString(newArray));
+		numbers = newArray;
+		System.out.print("Nilai dari numbers adalah: "+Arrays.toString(numbers));
 
 	}
 }

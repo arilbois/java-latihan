@@ -100,7 +100,7 @@ public class BusQuiz2{
 				recommed = "* Recommended bus for you \n- 1 bus with 45 seats and 1 bus with 12 seats with a price of "+ f.format(busP45+busP12);
 			}else if(passenger == 45 ){
 
-				recommed = ."* Recommended bus for you \n- 1 buses with 45 seats at a price of " + f.format(busP45);
+				recommed = "* Recommended bus for you \n- 1 buses with 45 seats at a price of " + f.format(busP45);
 			}else if(passenger <= 44  && passenger > 36 ){
 
 				recommed = "* Recommended bus for you \n- 1 bus with 32 seats and 1 bus with 12 seats with a price of "+ f.format(busP32+busP12);

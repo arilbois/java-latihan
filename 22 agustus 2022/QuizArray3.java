@@ -13,13 +13,11 @@ public class QuizArray3{
 
 		System.out.print("\nMasukan index Pertama : ");
 		index1 = input.nextInt();
-		index1 -= 1;
 
 		indexTemp = numbers[index1]; 
 		System.out.print("Masukan index Kedua : ");
 		index2 = input.nextInt();
 
-		index2 -= 1;
 		numbers[index1] = numbers[index2];
 		numbers[index2] = indexTemp;
 
