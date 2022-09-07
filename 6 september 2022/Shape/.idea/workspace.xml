@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="532fe302-52dd-4555-a200-61f263207db2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../6 september 2022.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/src/childs/BookProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/src/parent/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct2/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct2/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct2/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct2/bookProduct2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct2/src/Childs/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct2/src/Childs/Customers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct2/src/Childs/Mangaka.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct2/src/Childs/Reviewer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct2/src/Parent/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct2/src/Parent/Paper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct2/src/Parent/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct2/src/Parent/Publisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct2/src/Rating.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/src/Childs/Comic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/src/Parent/Paper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/src/Parent/Publisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/src/Parent/RatingBook.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2EQfHqyrtAybZ9AJcazmZut8w8Y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/padepokan 79/7 september 2022/Shape"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="532fe302-52dd-4555-a200-61f263207db2" name="Changes" comment="" />
+      <created>1662532646021</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662532646021</updated>
+    </task>
+    <servers />
+  </component>
+</project>
