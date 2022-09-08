@@ -1,0 +1,12 @@
+array list bersifat dinamis atau dapat dimodifikasi, ukuran datanya dapat di ubah dengan menambahkan atau hapus data , array list tidak bisa menggunaakan tipe data primitif seperti int, chat, boolean,float. arraylist lebih lambat dibanding array biasa tapi sangat membantu saat akan memanipulasi banyak data, untuk menggunakan listArray harus meng inport dahulu package nya import java.util.ArrayList, dan untuk inisialisainya  ArrayList<tipe data> nama = new ArrayList<tipe data>();
+
+data.add(value) = untuk menambahkan data sesuai value
+data.get(index) = untuk menampilkan data sesuai index
+data.remove(index) = untuk menghapus data sesuai index
+data.clear() = untuk mengahpus semua data pada objek data
+data.set(index, value) = untuk merubah data sesuai index
+data.size() = unutk mengetahui jumlah data di arraylist
+data.add(index, value) = menambahkan data sesuai index
+
+
+

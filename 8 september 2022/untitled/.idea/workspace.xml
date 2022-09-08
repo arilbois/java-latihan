@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f57b8d33-890b-45fa-b844-7a57b117de79" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1 september 2022/BasicOOPen/out/production/BasicOOPen/MainAPP.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1 september 2022/BasicOOPen/out/production/BasicOOPen/Pen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1 september 2022/inheritance/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1 september 2022/inheritance/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1 september 2022/inheritance/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1 september 2022/inheritance/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1 september 2022/inheritance/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1 september 2022/inheritance/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1 september 2022/inheritance/out/production/inheritance/AppMain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1 september 2022/inheritance/out/production/inheritance/Doctor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1 september 2022/inheritance/out/production/inheritance/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1 september 2022/inheritance/out/production/inheritance/Programmer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../1 september 2022/inheritance/out/production/inheritance/Teacher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/Encapsulation.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/access modifier.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/bookProduct/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/bookProduct/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/bookProduct/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/bookProduct/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/bookProduct/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/bookProduct/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/bookProduct/out/production/bookProduct/AppMain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/bookProduct/out/production/bookProduct/childs/Author.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/bookProduct/out/production/bookProduct/childs/Book.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/bookProduct/out/production/bookProduct/childs/Comic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/bookProduct/out/production/bookProduct/childs/Mangaka.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/bookProduct/out/production/bookProduct/childs/Novel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/bookProduct/out/production/bookProduct/childs/Novelis.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/bookProduct/out/production/bookProduct/childs/Publisher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/bookProduct/out/production/bookProduct/parent/BookProduct.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/bookProduct/out/production/bookProduct/parent/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/encapsulation/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/encapsulation/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/encapsulation/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/encapsulation/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/encapsulation/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/encapsulation/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/encapsulation/src/Categories.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/inheritance/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/inheritance/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/inheritance/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/inheritance/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/inheritance/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/inheritance/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/inheritance/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/inheritance/out/production/inheritance/AppMain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/inheritance/out/production/inheritance/childs/Doctor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/inheritance/out/production/inheritance/childs/Programmer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/inheritance/out/production/inheritance/childs/Teacher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/inheritance/out/production/inheritance/parents/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/inheritance/src/AppMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/inheritance/src/childs/Doctor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/inheritance/src/childs/Programmer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/inheritance/src/childs/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2 september 2022/inheritance/src/parents/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../23 agustus 2022/LoopingArray.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../23 agustus 2022/LoopingArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../23 agustus 2022/PerhitunganYudisium.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../23 agustus 2022/PerhitunganYudisium.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../23 agustus 2022/TabunganKeluarga.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../23 agustus 2022/TabunganKeluarga.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../23 agustus 2022/Tes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24 agustus 2022/Coba.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24 agustus 2022/Coba.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24 agustus 2022/CobaValidasi.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24 agustus 2022/CobaValidasi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24 agustus 2022/Flag.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24 agustus 2022/Flag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24 agustus 2022/MenghitungIpk2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24 agustus 2022/PerhitunganYudisium.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24 agustus 2022/PerhitunganYudisium.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24 agustus 2022/TabunganKeluarga.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24 agustus 2022/TabunganKeluarga.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24 agustus 2022/YachtDice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24 agustus 2022/YachtDice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24 agustus 2022/tempyudisium.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24 agustus 2022/zzzTabunganKeluarga.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../25 agustus 2022/BatuGuntingKertas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../25 agustus 2022/BatuGuntingKertas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../25 agustus 2022/MenghitungIpk2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../25 agustus 2022/PerhitunganYudisium.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../25 agustus 2022/PerhitunganYudisium.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../25 agustus 2022/TabunganKeluarga.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../25 agustus 2022/TabunganKeluarga.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../26 agustus 2022/Coba.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../26 agustus 2022/Coba.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../26 agustus 2022/PayrolKaryawan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../26 agustus 2022/PayrolKaryawan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../26 agustus 2022/cobaAray.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../26 agustus 2022/cobaAray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../26 agustus 2022/zzBeresPayrolKaryawan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../29 agustus 2022/Array2Dimensi.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../29 agustus 2022/Array2Dimensi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../29 agustus 2022/GajiPNSyahril.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../29 agustus 2022/GajiPNSyahril.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../30 agustus 2022/GajiPNSyahril.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../30 agustus 2022/GajiPNSyahril.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../31 agustus 2022/BasicOOP/out/production/BasicOOP/MainApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../31 agustus 2022/BasicOOP/out/production/BasicOOP/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../31 agustus 2022/GajiPNSG27.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../31 agustus 2022/GajiPNSyahril.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../31 agustus 2022/GajiPNSyahril.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/out/production/bookProduct/AppMain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/out/production/bookProduct/childs/Author.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/out/production/bookProduct/childs/Book.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/out/production/bookProduct/childs/Comic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/out/production/bookProduct/childs/Mangaka.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/out/production/bookProduct/childs/Novel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/out/production/bookProduct/childs/Novelis.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/out/production/bookProduct/childs/Publisher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/out/production/bookProduct/parent/BookProduct.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/out/production/bookProduct/parent/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/src/AppMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/src/childs/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/src/childs/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/src/childs/Comic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/src/childs/Mangaka.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/src/childs/Novel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/src/childs/Novelis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/src/childs/Publisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/src/parent/BookProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/src/parent/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct/src/testcase.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct2/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct2/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct2/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct2/src/Childs/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct2/src/Childs/BookProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct2/src/Childs/Comic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct2/src/Childs/Customers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct2/src/Childs/Mangaka.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct2/src/Childs/Reviewer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct2/src/MainApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct2/src/Paper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct2/src/Parent/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct2/src/Parent/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct2/src/Publisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProduct2/src/Rating.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProductSyahril.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5 september 2022/bookProductSyahril2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/out/production/bookProduct/AppMain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/out/production/bookProduct/childs/Author.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/out/production/bookProduct/childs/BookProduct.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/out/production/bookProduct/childs/Comic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/out/production/bookProduct/childs/Mangaka.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/out/production/bookProduct/childs/Novel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/out/production/bookProduct/childs/Novelis.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/out/production/bookProduct/childs/Publisher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/out/production/bookProduct/parent/Book.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/out/production/bookProduct/parent/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/out/production/bookProduct/testcase.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/src/AppMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/src/childs/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/src/childs/Comic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/src/childs/Mangaka.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/src/childs/Novel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/src/childs/Novelis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/src/childs/Publisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/src/parent/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProduct/src/testcase.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6 september 2022/bookProductSyahril.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/HandphoneInterface/out/production/HandphoneInterface/MainApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/HandphoneInterface/out/production/HandphoneInterface/PhoneUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/HandphoneInterface/out/production/HandphoneInterface/Xiaomi.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/HandphoneInterface/out/production/HandphoneInterface/interfaces/Phone.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/ProdukBookContoh/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/ProdukBookContoh/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/ProdukBookContoh/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/ProdukBookContoh/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/ProdukBookContoh/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/ProdukBookContoh/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/ProdukBookContoh/src/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/ProdukBookContoh/src/Comic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/ProdukBookContoh/src/Novel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/ProdukBookContoh/src/Price.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/ProdukBookContoh/src/Tax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/Shape/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/Shape/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/Shape/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/Shape/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/Shape/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/Shape/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/Shape/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/Shape/src/parents/data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/Shape/src/parents/java,.csc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/src/Childs/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/src/Childs/Customers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/src/Childs/Mangaka.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/src/Childs/Reviewer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/src/MainApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/src/Parent/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7 september 2022/bookProduct2/src/Parent/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/out/production/bookProduct/AppMain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/out/production/bookProduct/childs/Author.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/out/production/bookProduct/childs/BookProduct.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/out/production/bookProduct/childs/Comic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/out/production/bookProduct/childs/Mangaka.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/out/production/bookProduct/childs/Novel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/out/production/bookProduct/childs/Novelis.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/out/production/bookProduct/childs/Publisher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/out/production/bookProduct/parent/Book.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/out/production/bookProduct/parent/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/out/production/bookProduct/testcase.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/src/AppMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/src/childs/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/src/childs/BookProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/src/childs/Comic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/src/childs/Mangaka.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/src/childs/Novel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/src/childs/Novelis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/src/childs/Publisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/src/parent/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/src/parent/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/src/parent/Price.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/src/parent/Tax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookProduct/src/testcase.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/8 september 2022/AppMain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/8 september 2022/childs/Author.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/8 september 2022/childs/BookProduct.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/8 september 2022/childs/Comic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/8 september 2022/childs/Mangaka.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/8 september 2022/childs/Novel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/8 september 2022/childs/Novelis.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/8 september 2022/childs/Publisher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/8 september 2022/parent/Book.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/8 september 2022/parent/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/8 september 2022/parent/Price.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/8 september 2022/parent/Tax.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../out/production/8 september 2022/testcase.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ArrayList/MainApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9 september 2022/AraayList/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9 september 2022/AraayList/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9 september 2022/AraayList/bin/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9 september 2022/AraayList/src/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9 september 2022/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9 september 2022/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9 september 2022/array list.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9 september 2022/arrayList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../9 september 2022/arrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7 september 2022/Fish/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../7 september 2022/Fish/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7 september 2022/HandphoneInterface/src/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../7 september 2022/HandphoneInterface/src/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7 september 2022/HandphoneInterface/src/PhoneUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../7 september 2022/HandphoneInterface/src/PhoneUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7 september 2022/HandphoneInterface/src/Xiaomi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../7 september 2022/HandphoneInterface/src/Xiaomi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7 september 2022/HandphoneInterface/src/interfaces/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../7 september 2022/HandphoneInterface/src/interfaces/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7 september 2022/Shape/out/production/Shape/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../7 september 2022/Shape/out/production/Shape/MainApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7 september 2022/Shape/src/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../7 september 2022/Shape/src/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7 september 2022/Shape/src/childs/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../7 september 2022/Shape/src/childs/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7 september 2022/Shape/src/childs/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../7 september 2022/Shape/src/childs/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7 september 2022/Shape/src/parents/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../7 september 2022/Shape/src/parents/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainApp.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2ET0CwoFdcoytiCdYB6sAezSE7C" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainApp" />
+      <module name="ArrayList" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f57b8d33-890b-45fa-b844-7a57b117de79" name="Changes" comment="" />
+      <created>1662604146330</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662604146330</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
