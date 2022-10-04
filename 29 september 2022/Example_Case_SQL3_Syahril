@@ -1,0 +1,218 @@
+1. Query the two Product Name in Products with the shortest and longest Product names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest product name, choose the one that comes first when ordered alphabetically.
+Query:
+(SELECT  
+products.product_name,
+LENGTH(products.product_name) 
+FROM 
+products
+ORDER BY 
+LENGTH(products.product_name) ASC, 
+products.product_name limit 1)
+UNION
+(SELECT 
+products.product_name,
+LENGTH(products.product_name) 
+FROM 
+products
+ORDER BY 
+LENGTH(products.product_name) DESC, 
+products.product_name limit 1)
+
+
+2. Query the list of Product names starting with vowels (i.e., a, e, i, o, or u) from Products. Your result cannot contain duplicates.
+
+SIMILAR TO :
+
+SELECT 
+product_name 
+FROM 
+products
+WHERE 
+LOWER(product_name) SIMILAR TO '(a|i|u|e|o)%'
+ORDER BY 
+product_name
+
+POSIX :
+
+SELECT 
+product_name 
+FROM 
+products
+WHERE 
+product_name ~* '^(a|i|u|e|o)'
+ORDER BY 
+product_name
+
+3. Query the list of contact names ending with vowels (a, e, i, o, u) from customers. Your result cannot contain duplicates.
+
+SIMILAR TO :
+
+SELECT 
+contact_name
+FROM 
+customers
+WHERE 
+LOWER(contact_name) SIMILAR TO '%(a|i|u|e|o)'
+ORDER BY 
+contact_name
+
+POSIX :
+
+SELECT 
+contact_name
+FROM 
+customers
+WHERE 
+contact_name ~* '(a|i|u|e|o)$'
+ORDER BY 
+contact_name
+
+
+4. Query the list of contact names from customers which have vowels (i.e., a, e, i, o, and u) as both their first and last characters. Your result cannot contain duplicates.
+
+SIMILAR TO :
+
+SELECT 
+contact_name
+FROM 
+customers
+WHERE 
+LOWER(contact_name) SIMILAR TO '%(a|i|u|e|o)'
+AND LOWER(contact_name) SIMILAR TO '(a|i|u|e|o)%'
+ORDER BY 
+contact_name
+
+POSIX :
+
+
+SELECT 
+contact_name
+FROM 
+customers
+WHERE 
+contact_name ~* '^(a|i|u|e|o)' AND contact_name ~* '(a|i|u|e|o)$'
+ORDER BY 
+contact_name
+
+5. Query the list of product names from products that do not start with vowels. Your result cannot contain duplicates.
+
+SIMILAR TO :
+
+SELECT 
+product_name 
+FROM 
+products
+WHERE 
+LOWER(product_name) NOT SIMILAR TO '(a|i|u|e|o)%'
+ORDER BY 
+product_name
+
+POSIX :
+
+SELECT 
+product_name 
+FROM 
+products
+WHERE 
+product_name !~* '^(a|i|u|e|o)'
+ORDER BY 
+product_name
+
+6. Query the list of product names from products that do not end with vowels. Your result cannot contain duplicates.
+
+SIMILAR TO :
+
+SELECT 
+product_name 
+FROM 
+products
+WHERE 
+LOWER(product_name) NOT SIMILAR TO '%(a|i|u|e|o)'
+ORDER BY 
+product_name
+
+POSIX :
+
+SELECT 
+product_name 
+FROM 
+products
+WHERE 
+product_name !~* '(a|i|u|e|o)%'
+ORDER BY 
+product_name
+
+
+7. Query the list of product names from products that either do not start with vowels or do not end with vowels. Your result cannot contain duplicates.
+
+SIMILAR TO :
+
+SELECT 
+product_name 
+FROM 
+products
+WHERE 
+LOWER(product_name) NOT SIMILAR TO '(a|i|u|e|o)%' 
+OR LOWER(product_name) NOT SIMILAR TO '%(a|i|u|e|o)' 
+ORDER BY 
+product_name
+
+POSIX :
+
+
+SELECT 
+product_name 
+FROM 
+products
+WHERE 
+product_name !~* '^(a|i|u|e|o)'
+OR product_name !~* '(a|i|u|e|o)%'
+ORDER BY 
+product_name
+
+
+
+8. Query the list of product names from products that do not start with vowels and do not end with vowels. Your result cannot contain duplicates.
+
+
+SIMILAR TO :
+
+SELECT 
+product_name 
+FROM 
+products
+WHERE 
+LOWER(product_name) NOT SIMILAR TO '(a|i|u|e|o)%' 
+AND LOWER(product_name) NOT SIMILAR TO '%(a|i|u|e|o)' 
+ORDER BY 
+product_name
+
+POSIX :
+
+
+SELECT 
+product_name 
+FROM 
+products
+WHERE 
+product_name !~* '^(a|i|u|e|o)'
+AND product_name !~* '(a|i|u|e|o)%'
+ORDER BY 
+product_name
+
+9. Query a list of Product names from PRODUCTS with even ID numbers only. You may print the results in any order, but must exclude duplicates from your answer.
+
+SELECT 
+product_name 
+FROM 
+products
+WHERE 
+product_id % 2 = 0
+ORDER BY 
+product_name
+
+10. find the difference between the total number of CITY entries in the table and the number of distinct CITY entries in the table. From Customers.
+
+SELECT
+COUNT(city)-COUNT(DISTINCT city) AS differenceCity
+FROM customers

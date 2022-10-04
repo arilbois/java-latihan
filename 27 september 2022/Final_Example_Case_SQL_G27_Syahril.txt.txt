@@ -1,0 +1,305 @@
+1. 1.	Order Subtotals
+For each order, calculate a subtotal for each Order (identified by OrderID). This is a simple query using GROUP BY to aggregate data for each order.
+
+
+SELECT order_details.order_id,
+round(
+SUM((quantity)*unit_price * (1 - discount)))
+FROM 		order_details
+GROUP BY order_details.order_id
+ORDER BY  order_details.order_id
+
+2.	Sales by Year From 1996-12-24 to 1997-09-30
+This query shows how to get the year part from Shipped_Date column. A subtotal is calculated by a sub-query for each order. The sub-query forms a table and then joined with the Orders table.
+
+SELECT 	orders.shipped_date,
+order_details.order_id,
+round(
+SUM(
+(order_details.quantity) *order_details.unit_price * (1 - order_details.discount))),
+EXTRACT(YEAR FROM orders.shipped_date) AS year
+FROM 		order_details
+JOIN orders
+ON orders.order_id = order_details.order_id
+WHERE orders.shipped_date BETWEEN '1996-12-24' AND '1997-09-30'
+GROUP BY orders.shipped_date,order_details.order_id
+ORDER BY orders.shipped_date
+
+3.	Alphabetical List of Products
+This is a rather simple query to get an alphabetical list of products, and still in productiions.
+
+SELECT products.product_id,
+products.product_name,
+products.supplier_id,
+products.category_id,
+products.quantity_per_unit,
+products.unit_price
+FROM
+products
+WHERE	
+products.discontinued = 0
+ORDER BY 
+products.product_name
+
+4.	Current Product List
+This is another simple query. No aggregation is used for summarizing data.
+
+SELECT products.product_id,
+products.product_name,
+FROM
+products
+WHERE	
+products.discontinued = 0
+ORDER BY 
+products.product_name
+
+5.	Order Details Extended
+This query calculates sales price for each order after discount is applied.
+
+SELECT 
+order_details.order_id, 
+products.product_id, 
+products.product_name, 
+products.unit_price, 
+order_details.quantity, 
+order_details.discount, 
+round
+(SUM 
+( 
+order_details.unit_price * order_details.quantity * ( 1-order_details.discount ))) AS extendedprice
+FROM 
+order_details
+JOIN products USING(product_id)
+GROUP BY 
+order_details.order_id, 
+products.product_id, 
+order_details.quantity, 
+order_details.discount
+ORDER BY order_details.order_id
+
+
+6.	Sales by Category For 1997
+For each category, we get the list of products sold and the total sales amount. Note that, in the second query, the inner query for table c is to get sales for each product on each order. It then joins with outer query on Product_ID. In the outer query, products are grouped for each category.
+
+SELECT 
+categories.category_id,
+categories.category_name,
+products.product_name,
+ROUND(
+SUM(
+order_details.unit_price * order_details.quantity - (order_details.unit_price * order_details.quantity *order_details.discount))) AS productSales
+FROM 
+products
+JOIN categories 
+USING(category_id)
+JOIN order_details 
+USING(product_id)
+JOIN orders 
+USING(order_id)
+WHERE 
+EXTRACT (YEAR FROM orders.order_date) = '1997'
+GROUP BY 
+categories.category_id, 
+products.product_name
+ORDER BY 
+categories.category_id
+
+7.  Ten Most Expensive Products
+The two queries below return the same result. It demonstrates how MySQL limits the number of records returned.
+The first query uses correlated sub-query to get the top 10 most expensive products.
+The second query retrieves data from an ordered sub-query table and then the keyword LIMIT is used outside the sub-query to restrict the number of rows returned.
+
+SELECT 
+product_name AS Ten_Most_Expensive_Product, 
+unit_price
+FROM 
+products
+ORDER BY 
+unit_price DESC LIMIT 10
+
+8.	Products by Category
+This is a simple query just because it's in Access Northwind so we converted it here in PostgreSQL.
+
+Query :
+SELECT
+categories.category_name,
+products.product_name,
+products.quantity_per_unit,
+products.units_in_stock,
+CASE 
+WHEN products.discontinued = 1 THEN 'Yes' 
+ELSE
+'No'
+END CASE
+FROM
+products
+JOIN categories USING(category_id)
+ORDER BY category_name,
+products.product_name
+
+9.	Customers and Suppliers by City
+This query shows how to use UNION to merge Customers and Suppliers into one result set by identifying them as having different relationships to Northwind Traders - Customers and Suppliers.
+
+SELECT city, 
+company_name, 
+contact_name, 
+'Suppliers' AS relationship
+FROM suppliers
+UNION
+SELECT 
+city, 
+company_name, 
+contact_name,
+'Customers' AS relationship 
+FROM 
+customers
+ORDER BY city
+
+10.	Employee Sales by Country For 1997
+For each employee, get their sales amount, broken down by country name.
+
+SELECT 
+employees.country,
+employees.last_name,
+employees.first_name,
+orders.shipped_date,
+orders.order_id,
+ROUND(
+SUM(
+order_details.unit_price * order_details.quantity * (1 - order_details.discount))) AS sale_amount
+FROM 
+employees
+JOIN orders USING(employee_id)
+JOIN order_details USING(order_id)
+WHERE 
+EXTRACT (YEAR FROM orders.shipped_date) = '1997'
+GROUP BY
+employees.country,
+employees.last_name,
+employees.first_name,
+orders.order_id
+ORDER BY employees.country
+
+11.	Products Above Average Price
+This query shows how to use sub-query to get a single value (average unit price) that can be used in the outer-query.
+
+SELECT 
+product_name,
+unit_price
+FROM	
+products
+WHERE unit_price > 
+(SELECT AVG(unit_price)
+FROM products)
+ORDER BY
+unit_price
+
+12.	Product Sales for 1997
+This query shows how to group categories and products by quarters and shows sales amount for each quarter.
+
+SELECT 
+products.category_id,
+categories.category_name,
+products.product_name,
+ROUND(
+SUM(
+order_details.unit_price * order_details.quantity * (1 - order_details.discount))) AS productSales,
+(SELECT EXTRACT (QUARTER FROM shipped_date)) AS shippedquarter
+FROM 
+products
+JOIN order_details USING(product_id)
+JOIN categories USING(category_id)
+JOIN orders USING(order_id)
+WHERE 
+EXTRACT (YEAR FROM orders.order_date) = '1997'
+GROUP BY
+products.category_id,
+products.product_id,
+categories.category_name,
+categories.category_id,
+shippedquarter
+
+
+13.	Category Sales for 1997
+This query shows sales figures by categories - mainly just aggregation with sub-query. The inner query aggregates to product level, and the outer query further aggregates the result set from inner-query to category level.
+
+SELECT 
+categories.category_name, 
+ROUND(
+SUM(
+order_details.unit_price * order_details.quantity * (1 - order_details.discount))) AS categorySales
+FROM 
+categories
+JOIN products USING(category_id)
+JOIN order_details USING(product_id)
+JOIN orders USING(order_id)
+WHERE 
+EXTRACT(YEAR FROM orders.order_date) = '1997'
+GROUP BY category_name
+
+14.	Quarterly Orders by Product For 1997
+This query shows how to convert order dates to the corresponding quarters. It also demonstrates how SUM function is used together with CASE statement to get sales for each quarter, where quarters are converted from OrderDate column.
+
+
+SELECT 
+products.product_name,
+customers.company_name,
+EXTRACT(YEAR FROM orders.order_date) AS orderyear,
+SUM(
+CASE
+WHEN EXTRACT(QUARTER FROM orders.order_date) = 1
+THEN round(order_details.unit_price * order_details.quantity * (1-order_details.discount))
+ELSE 0
+END
+) AS qtr1,
+SUM(
+CASE
+WHEN EXTRACT(QUARTER FROM orders.order_date) = 2
+THEN round(order_details.unit_price * order_details.quantity * (1-order_details.discount))
+ELSE 0
+END
+) AS qtr2,
+SUM(
+CASE
+WHEN EXTRACT(QUARTER FROM orders.order_date) = 3
+THEN round(order_details.unit_price * order_details.quantity * (1-order_details.discount))
+ELSE 0
+END
+) AS qtr3,
+SUM(
+CASE
+WHEN EXTRACT(QUARTER FROM orders.order_date) = 4
+THEN round(order_details.unit_price * order_details.quantity * (1-order_details.discount))
+ELSE 0
+END
+) AS qtr4
+FROM products
+JOIN order_details USING(product_id)
+JOIN orders USING(order_id)
+JOIN customers USING (customer_id)
+WHERE
+EXTRACT ( YEAR FROM orders.order_date ) = 1997
+GROUP BY 
+products.product_name,
+customers.company_name,
+orderyear
+
+15.	Number of units in stock by category and supplier continent
+This query shows that case statement is used in GROUP BY clause to list the number of units in stock for each product category and supplier's continent. Note that, if only s.Country (not the case statement) is used in the GROUP BY, duplicated rows will exist for each product category and supplier continent.
+
+
+SELECT
+categories.category_name AS productCategory,
+CASE
+WHEN suppliers.country IN('USA', 'Canada','Brazil') THEN  'America'
+WHEN suppliers.country IN('Singapore', 'Japan',' Australia') THEN 'Asia-Pasific'
+else 'Europe'
+end as SupplierContigen,
+SUM(products.units_in_stock) AS unitsInStock
+FROM
+categories
+JOIN products USING(category_id)
+JOIN suppliers USING(supplier_id)
+GROUP BY productCategory,
+SupplierContigen
+ORDER BY category_name

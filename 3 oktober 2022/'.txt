@@ -1,0 +1,57 @@
+pom.xml
+
+The full form of POM is Project Object Model
+Ini adalah unit kerja mendasar di Maven
+pom adalah file XML yang berisi informasi tentang proyek dan detail konfigurasi yang digunakan oleh Maven untuk membangun proyek.
+Saat menjalankan tugas atau tujuan, Maven mencari POM di direktori saat ini. Ia membaca POM, mendapatkan informasi konfigurasi yang diperlukan, lalu mengeksekusi tujuannya.
+Konfigurasi yang ditentukan dalam POM adalah dependensi proyek, plugin atau tujuan yang dapat dieksekusi, profil build.
+
+<project></project>
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+project adalah elemen root dari pom.xml
+Ini menjelaskan pengaturan skema dasar seperti skema Apache dan spesifikasi w3.org.
+xmlns::xsi="http://www.w3.org/2001/XMLSchema-instance; menunjukkan bahwa elemen dan tipe data yang digunakan dalam skema berasal dari namespace “http://www.w3.org/XMLSchema-instancea”. Ini juga menentukan bahwa elemen dan tipe data yang berasal dari namespace http://www.w3.org/2001/XMLSchema-instance” harus diawali dengan xsi:
+xmlns menentukan deklarasi namespace default. Deklarasi ini memberi tahu validator skema bahwa semua elemen yang digunakan dalam dokumen XML ini dideklarasikan dalam "http://maven.Apache.org/POM/4.0.0;  namespace
+Pengurai XML Java yang digunakan pegas akan membaca nilai schemaLocation dan mencoba memuatnya dari internet, untuk memvalidasi file XML. Spring, pada gilirannya, memotong permintaan pemuatan tersebut dan menyajikan versi dari dalam file JARnya sendiri.
+Jika Anda menghilangkan schemaLocation, maka parser XML tidak akan tahu di mana mendapatkan skema untuk memvalidasi konfigurasi.
+
+	<groupId>com.example</groupId>
+	<artifactId>easy-note</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>easy-note</name>
+	<description>Demo project for Spring Boot</description>
+
+groupId: Ini umumnya unik untuk sebuah proyek. Misalnya, semua artefak inti Maven harus hidup di bawah groupId – org.apache.maven.
+artifactId: ArtifactId umumnya adalah nama proyek yang dikenal.
+version: mendefinisikan versi proyek
+nama: Nama aplikasi
+deskripsi: deskripsi aplikasi
+
+POM Relationships
+dependencies
+inheritance
+aggregation
+
+Maven mengunduh dan menautkan dependensi pada kompilasi, serta pada tujuan lain yang memerlukannya.
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+Di dalam <dependency> – Anda menentukan semua modul dan toples yang akan Anda perlukan dalam kerangka kerja proyek Anda.
+
+Setiap ketergantungan hanyalah proyek pakar lain yang ditentukan oleh groupId, artifactId, versi, dll.
+
+Selain ketiga di atas ada beberapa tag lagi yang digunakan yaitu sebagai berikut:
+
+classifier: Classifier membedakan artefak yang dibangun dari POM yang sama tetapi berbeda dalam konten. Ini adalah beberapa string opsional dan arbitrer yang – jika ada – ditambahkan ke nama artefak tepat setelah nomor versi.
+type: Sesuai dengan jenis ketergantungan yang dipilih. Ini default ke jar.
+scope: Elemen ini mengacu pada classpath tugas yang ada (kompilasi dan runtime, pengujian, dll.) serta cara membatasi transitivitas ketergantungan. Ada lima cakupan yang tersedia: kompilasi, disediakan, runtime, tes, sistem
+systemPath: hanya digunakan jika ruang lingkup ketergantungan adalah sistem. Jika tidak, build akan gagal jika elemen ini disetel. Jalur harus absolut, jadi disarankan untuk menggunakan properti untuk menentukan jalur khusus mesin (lebih lanjut tentang properti di bawah), seperti ${java.home}/lib.
+
+opsional: Menandai dependensi sebagai opsional ketika proyek ini sendiri merupakan dependensi.

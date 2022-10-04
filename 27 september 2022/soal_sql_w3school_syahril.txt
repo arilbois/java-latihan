@@ -1,0 +1,90 @@
+1. Coba buatkan Query statment untuk menampilkan result set Orders seperti dibawah ini.
+Total price didapat dari penjumlahan quantity dikali dengan price product yang dibeli saat order
+
+SELECT Orders.OrderID, Customers.CustomerName, SUM(OrderDetails.Quantity * products.price) AS Total_Price
+FROM Orders
+INNER JOIN Customers
+ON Orders.CustomerID=Customers.CustomerID
+INNER JOIN OrderDetails
+ON Orders.orderID = OrderDetails.orderID
+INNER JOIN products
+ON OrderDetails.ProductID = products.ProductID
+GROUP BY
+Orders.OrderID
+
+2. Buatlah sebuah query yang menampilkan result set Berapa jenis product yang sudah di beli oleh
+setiap customer.
+
+SELECT 
+    Customers.CustomerName, 
+    COUNT(orderDetails.ProductID) AS Total_Product
+FROM 
+    Customers
+        LEFT JOIN Orders 
+            ON Customers.CustomerID = Orders.CustomerID
+        LEFT JOIN OrderDetails 
+            ON Orders.OrderID = OrderDetails.OrderID
+GROUP BY Customers.CustomerID
+ORDER BY Customers.CustomerName
+
+3. Buatlah sebuah query yang menampilkan result set untuk
+mencari berapa jumlah quantity untuk setiap product yang di order oleh setiap customer.
+
+SELECT 
+    Customers.CustomerName, 
+    Products.ProductName,
+    SUM(orderDetails.Quantity) AS Total_Product
+FROM 
+    Customers
+        LEFT JOIN Orders 
+            ON Customers.CustomerID = Orders.CustomerID
+        LEFT JOIN OrderDetails 
+            ON Orders.OrderID = OrderDetails.OrderID
+        LEFT JOIN Products
+            ON Products.ProductID = OrderDetails.ProductID
+GROUP BY Products.ProductName,
+         Customers.CustomerName 
+ORDER BY Customers.CustomerName
+
+
+4. Buatlah sebuah query untuk menampilkan result set mencari Total Quantity setiap product yang di
+order disetiap negara asal dari customer
+
+SELECT 
+    Customers.Country,
+    Products.ProductName,
+    SUM(orderDetails.Quantity) AS Total_Quantity
+FROM 
+    Customers
+        JOIN Orders 
+            ON Customers.CustomerID = Orders.CustomerID
+        JOIN OrderDetails 
+            ON Orders.OrderID = OrderDetails.OrderID
+        JOIN Products
+            ON Products.ProductID = OrderDetails.ProductID
+GROUP BY Products.ProductName,
+          Customers.Country
+ORDER BY  Customers.Country
+
+5. Buatlah query untuk menampilkan bonus untuk setiap customer berdasarkan Total Price dari yang
+sudah di order. Dengan ketentuan:
+total price 1-500 , maka bonus Hat
+total price 500-1000, maka bonus T-Shirt
+total price diatas 1000, maka bonus TV
+
+Query :
+
+SELECT Orders.OrderID, Customers.CustomerName, SUM(OrderDetails.Quantity * products.price) AS Total_Price,CASE
+WHEN SUM(OrderDetails.Quantity * products.price) BETWEEN 1 AND 500 THEN 'Hat'
+WHEN SUM(OrderDetails.Quantity * products.price) BETWEEN 500 AND 1000 THEN 'T-Shirt'
+ELSE 'TV'
+END AS Bonus
+FROM Orders
+INNER JOIN Customers
+ON Orders.CustomerID=Customers.CustomerID
+INNER JOIN OrderDetails
+ON Orders.orderID = OrderDetails.orderID
+INNER JOIN products
+ON OrderDetails.ProductID = products.ProductID
+GROUP BY
+Orders.OrderID

@@ -1,0 +1,81 @@
+Detail setiap dependency
+1. Spring web:
+    - membangun web termasuk RESTful, Spring MVC
+    - menggunakan Apache Tomcat sebagai default embedded container
+    - RESTful: gaya arsitektur dari API yang menggunakan HTTP Request untuk akses dan menggunakan data.
+    - MVC: konsep yang memisahkan sebuah aplikasi menjadi Model, View, dan Contoller
+        - Model: bertugas menyiapkan, mengatur, manipulasi, dan organisasi data di database.
+        - View: menampilkan informasi dalam bentuk Graphical User Interface (GUI)
+        - Contoller: mengatur model dan view agar dapat saling terhubung
+
+2.    Spring Data JPA
+-    JPA atau Java Persistence API sendiri adalah sebuah standar spesifikasi tentang bagaimana cara mengakses database di Java
+-    jika menggunakan JDBC kita harus membuat koneksi database, memastikan koneksi aman dengan memasang exception, membuat query secara manual
+-    Dengan menggunakan JPA, kita hanya perlu fokus pada class yang sudah dipetakan ke tabel-tabel di database. Jadi tidak perlu repot mengurusi layer database
+- untuk memudahkan pembuatan aplikasi Spring-powered yang menggunakan teknologi akses data.
+- menangani dengan peningkatan dukungan untuk lapisan akses data dengan basis JPA
+-    Intinya Spring Data JPA sendiri adalah abstraksi dari data access layer. Di dalam Spring Data JPA ini tersedia beberapa macam repository yang dirakit dengan fungsi CRUD dasar untuk memudahkan kita membangun aplikasi
+
+3. PostgreSQL Driver:
+ - Berfungsi untuk menghubungkan program java dengan database PostgreSql
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/databasename
+spring.datasource.username=postgres
+spring.datasource.password=password
+
+4. Tujuan dari Spring Boot DevTools ini adalah untuk mencoba dan meningkatkan waktu pengembangan saat bekerja dengan aplikasi Spring Boot. Spring Boot DevTools mengambil perubahan dan restart aplikasi.
+
+Fitur Spring Boot DevTools
+Spring Boot DevTools menyediakan fitur berikut:
+
+Property Defaults
+Automatic Restart
+LiveReload
+Remote Debug Tunneling
+Remote Update and Restart
+
+-Default Properti: Spring Boot menyediakan teknologi templating Thymeleaf yang berisi properti spring.thymeleaf.cache. Ini menonaktifkan caching dan memungkinkan kami memperbarui halaman tanpa perlu memulai ulang aplikasi. 
+
+-Automatic Restart: Restart otomatis berarti memuat ulang kelas Java dan mengonfigurasinya di sisi server. Setelah sisi server berubah, itu diterapkan secara dinamis, restart server terjadi, dan memuat kode yang dimodifikasi. Ini sebagian besar digunakan dalam aplikasi berbasis layanan mikro. Spring Boot menggunakan dua jenis ClassLoaders:
+
+Kelas yang tidak berubah (third-Jars) dimuat di  base ClassLoader.
+Kelas yang sedang kami kembangkan secara aktif dimuat di base ClassLoader.
+
+Ketika aplikasi restart, ClassLoader restart dibuang, dan yang baru diisi. Oleh karena itu, ClassLoader dasar selalu tersedia dan terisi.
+Kita dapat menonaktifkan auto-restart server dengan menggunakan properti spring.devtools.restart.enabled ke false.
+
+- LiveReload: Modul Spring Boot DevTools menyertakan server tertanam yang disebut LiveReload. Ini memungkinkan aplikasi untuk secara otomatis memicu penyegaran browser setiap kali kami membuat perubahan pada sumber daya. Ini juga dikenal sebagai auto-refresh.
+
+Catatan: Kita dapat menonaktifkan LiveReload dengan menyetel properti spring.devtools.livereload.enabled ke false.
+
+-Remote Debug Tunneling: Spring Boot dapat melakukan tunnel JDWP (Java Debug Wire Protocol) melalui HTTP langsung ke aplikasi. Ia bahkan dapat menjalankan penerapan aplikasi ke penyedia Internet Cloud yang hanya mengekspos port 80 dan 443.
+
+-Remote Update and Restart: Ada trik lain yang ditawarkan DevTools adalah: mendukung pembaruan dan restart aplikasi jarak jauh. Ini memonitor classpath lokal untuk perubahan file dan mendorongnya ke remote server, yang kemudian dimulai ulang. Kami juga dapat menggunakan fitur ini dalam kombinasi dengan LiveReload.
+
+5. validation
+
+bean validation adalah standar de-facto untuk menerapkan logika validasi di ekosistem Java. Ini terintegrasi dengan baik dengan Spring dan Spring Boot.
+
+Beberapa anotasi validasi yang paling umum adalah:
+
+@NotNull: untuk mengatakan bahwa suatu bidang tidak boleh nol.
+@NotEmpty: untuk mengatakan bahwa bidang daftar tidak boleh kosong.
+@NotBlank: untuk mengatakan bahwa bidang string tidak boleh berupa string kosong (yaitu harus memiliki setidaknya satu karakter).
+@Mindan @Max: untuk mengatakan bahwa bidang numerik hanya valid jika nilainya di atas atau di bawah nilai tertentu.
+@Pattern: untuk mengatakan bahwa bidang string hanya valid jika cocok dengan ekspresi reguler tertentu.
+@Email: untuk mengatakan bahwa bidang string harus berupa alamat email yang valid.
+
+class Customer {
+
+  @Email
+  private String email;
+
+  @NotBlank
+  private String name;
+  
+  @Size(min = 6, max = 6,message = "Minimal panjang kode adalah 6 dan Maksimal adalah 6")
+  private String kode;
+
+  @Pattern(regexp = "^[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}$")
+  private String ipAddress;
+}

@@ -1,0 +1,208 @@
+postgreSql(post gress SQL) adalah sebuah databse management system (RDBMS) yang dikembangkan oleh relawan yg ada didunia (Open source)
+bisa berjalan disemua system operasi dan mendukung bahasa pemograman c / c++, java, perl, Python, Ruby, Tcl dan open database Connectivy (ODBC). PostGreeSql mendukung sebagian besar dari standar sql dan menawarkan fitur modern dan mendukung teks, gambar, suara, video.
+Fitur utama PostgreSql
+Complex sql queries
+sql sub-selects
+foreign keys
+Trigger
+views
+Transactions
+Hot Standby (as of 9.0)
+
+kelebihan PostgreSQl
+-PostgreSQl memiliki asrsitektur multiproses (Forking) yang berarti memiliki stabilitas yg lebih tinggi, sebab satu proses anak yang mati tidak akan menyebabkan seluruh daemon mati.
+-Dalam kondisi load tinggi (Jumlah koneksi simultan besar), kecepatan PostgreSQl sering mengalahkan Mysql untuk query dengan klausa Join yang kompleks, hal ini dikarenakan PostgreSQl mendukung locking di level yang lebih rendah, yaitu row.
+-PostgreSQl memiliki fitur OO seperti pewarisan tabel dan tipe data, atau tipe data array yang kadang praktis untuk menyimpan banyak item data di dalam satu record.
+-PostgreSQl menyeduakan hampir seluruh fitur fitur database seperti yg terdapat dalam produk database komersial pada umumnya
+-PostgreSQl pun memiliki tipe data geometri (seperti titik, garis, lingkaran, poligon) yg mungkin berguna bagi aplikasi ilmiah tertentu
+-PostgreSQl memberikan kita kemampuan mendefinisikan sebuah field sebagai array
+-PostgreSQl memiliki hampir semua fasilitas standar yg biasanya diinginkan : view, trigger, subselek, stored procedure(dalam beberapa bahasa), dan foreign key constraint.
+-PostgreSQl juga memiliki apa yg disebut rule, yaitu tindakan custom bisa kita deffinisika dieksekusi saat sebuah table di-Insert, update, atau delete
+-PostgreSQl juga mempunyai kemampuan untuk membuat konektifitas dengan database lain seperti pgdump, interbase, pgaccess dan hampir semua db pada linux
+
+kekurangan PostgreSQl
+-kurangan begitu populer dan cocok bekerja di lungkungan web jika dibandingkan dengan mysql
+-kurang fokus dalam hal kelangsingan dan kecepatan
+-arsitektur dengan multiproses ini sulit diterapkan ke windows, kareana windows amat thread-oriented
+-PostgreSQl sendiri bisa dijalankan di windows melalui lapisan emulasi Cygwin
+-kurang unggul dalam hal ketersediaan funsi built-in.
+-replikasi di PostgreSQl sendiri belum disertakan dalam distribusi standarnya.
+-PostgreSQl sendiri terbatas hanya bisa melakukan penambahan kolom, penggantian nama kolom, dan penggantian nama tabel
+
+Sql adalah bahasa pemograman standart saat mengolah database
+
+10 fungsi Sql di databse 
+1. mengedit sekaligus memperbaharui catatan data di databse
+2. mampu bekerja selaras dengan perintah yang dianggap bertentangan atau kntras dengan sistem dari db
+3.memproduksi data-data baru untuk disimpan di db
+4. menghapus catatan data yg tidak terpakai lagi atau telah usang dari db
+5. menulis aneka catatan data dalam database
+6. membuat definisi akses untuk me-request tabel,view dan prosedur pengolahan data lain
+7. membuat tabel baru untuk pengolahan data di db
+8. mengembalikan informasi data awal sebelm diolah dari db
+9. membuat tampilan data atau mempermudah melihat data di db
+10. mengadakan kembali prosedur yg telah ada sebelunya di db
+
+2 konsep penting sql
+
+1. bahasa pemograman sql adalah tool standar untuk proses pengilahan data yg bisa diaplikasikan pada banyak jenis database, sperti : MS access,Mysql,sybase, Sql server, postgres, oracle, dan seterusnya
+2. Perintah sql digunakan untuk mengiolah data di database, khususnnya untuk melakukan proses seperti menulis, membacam dan memodifikasi data.
+
+SELECT [DISTINCT | ALL ] { * | [fuekdExoressuib[As newName]} FROM tableName [alias [WHERE condition] [GROUP BY fieldName(s) [HAVING condition] ORDER BY fieldBane (s)
+
+SELECT adlah kata kunci SQL yg memungkinkan database mengetahui bahwa anda ingin mengambil data.
+
+[DISTINCT | ALL] adalah kata kunci opsional yg dapat digunakan untuk menyempurnakan hasil yg dikembalikan dari pernyataan SQL SELECT. jika tidak ada yg ditentukan maka ALL diasumsukan sebagai default.
+
+{*| [fieldExoression [AS newName]}, "*" memilih semua field dari nama tabel yg ditentukan, fieldExpression melakukan beberapa perhitungan pada field yg ditentukan seperti menambahkan angka atau menggabungkan dua field string menjadi satu.
+
+FROM tableName adalah wajib dan harus berusu setudaknyta satu tabel, beberapa tabel harus dipisahkan menggunakan koma atau digabungkan menggunakan kata kunci JOIN.
+kondisi WHERE adalah opsional, dapat digunakan untuk menentukan kriteria dalam kumpulan hasil yg dikembalikan dari kueri.
+GROUP BY digunakan untuk mengmpulkan record yg memiliki nilkai field yg sama.
+HAVING condition digunakan untuk menentukan kriteria saat bekerja menggunakan kata kunci GROUP BY.
+ORDER BY digunakan utnuk menentukan urutan pengurutan dari kumpulan hasil
+
+SELECT * FROM tableName WHERE condition
+
+"SELECT * FROM tableName" adalah penyataan SELECT standar
+"WHERE" adalah kata kunci yg membatasi kumpulan hasil kueri dan "kondisi" alah filter yg akan diterapkan pada hasil. Filter dapat berupa rentangm nilai tunggal, atau subkueri.
+ada beberapa operator yg bisa digunakn pada perintah where diantaranya adlah AND, OR, IN Greater Than (>), Not Equal(<>)
+
+INSERT INTO INSERT INTO `table_name` (column_1,column_2,..) VALUES (value_1,value_2,..);
+
+saat menjalankan perintah INSERT INTO, nilai data yg akan dimasukkan harus memperhatikan hal-hal berikut ini:
+1. Tipe data string-semua nilai harus diapit dalam tanda kutip tunggal.
+2, tipe data numerik- semua nilai numerik harus diberikan secara langusng tanpa menyertakan nya dalam tanda kutip tunggal atau ganda
+3, Tipe data tanggal menyertakan nilai tanggal dalam tanda kutip tunggal dalam format 'YYYY-MM-DD'
+
+DELETE FROM `table_name` [WHERE condition];
+
+DELETE FROM `table_name` membantu server untuk menghapus baris dari tabel.
+[WHERE condition] adalah opsional dan digunakan untuk menempatkan filter yg membatasi jumlah baris yg dipegaruhi oleh sintaks DELETE query
+jika klausa WHERE tidak digunakan dalam query DELETE, maka semua baris dalam tabel akan dihapus
+
+UPDATE `table_name` SET `column_name` = `new_value` [WHERE condition];
+UPDATE `table_name` adalah perintah yg memberitahu server untuk memperbarui data dalam sebuah table.
+SET `column_name` = `new_value`  adalah nama dan nilai field yg akan terpengaruh oleh kueri update
+[WHERE condition]; adalah opsional dan dapat digunakan untuk menmpatkan filter yg membatasi jumlah baris yg terpengaruh oleh kueri update
+
+SELECT
+film_id,
+title,
+rental_rate
+FROM
+film
+WHERE
+rental_rate > (
+SELECT
+AVG(rental_rate)
+FROM
+film
+);
+
+Query didalam tanda kurung disebut subquery atau inner query. kueri yg berisi subkueri dikenal sebagi kueri luar
+
+PostgreSQL mengeksekusi kueri yg berisi subkueri dalam urutan berikut:
+
+1. Jalankan subquery.
+2. dapatkan hasilnya dan berikan ke kueri luar
+3. Mengeksekusi kueri luar
+
+SELECT Order.OrderID, Customers.CustomerName, Order.OrderDate FROM Orders INNER JOIN Customers ON Order.Customers.ID =CustomersID;
+INNER JOIN Digunakan untuk mengembalikan baris dari kedua tabel yg memnuhi kondisi yg diberikan
+OUTER JOIN mengembalikan semua record yg cocok dari kedua tabel
+LEFT JOIN mengembalikan semua baris dari tabel disebelah kiri meskipun tidak ada baris yg cocok ditemukan di tabel di sebelah kanan
+RIGHT JOIN jelas kebalikan dari left join
+
+SELECT asal FROM siswa UNION SELECT asal FROM gurul
+
+perintah UNION digunakan untuk menggabungkan lebih dari satu hasil kueri select menjadi satu kuery yg berisi baris dari semua kueri pemilihan
+
+klausa DISTINCT digunakan untuk menghilangkan nilai duplikat dari kumpulan hasil kueri Union. SQL menggunakan kalausa DISTINCAT sebagai default saat menjalankan kueri UNION jika tidak ada yg ditentukan
+
+kalusa ALL digunakan untuk mengembalikan semua bahkan baris duplikat dalam kueri UNIUN
+
+Group BY
+
+klausa SQL GROUP BY ini digunakan dengan SELECT statement
+
+Di dalam Klausa SQL query GROUP BY ditempatkan setelah klausa WHERE
+di dalam klausa SQL query GROUP BY ditempatkan sebelum klausa ORDER BY jika Developer menggunakananya
+
+fungsi sql dapat lebih dari sedar menyimpan data, bisa juga manipulasi sebelum mengambil ataupun menyimpannya, fungsi hanya potongan kode yg melakukan ioperasi yg kemudian mengembalikan hasilnya, beberapa fungsi menerrima paramneter dan tidak, kenapa kita perlu mengunakan fungsi, karena bisa membantu ngurangi lalu lintas jaringan di server / client, lapisan karekter hanya perlu memangil fungsi yg disimpan tampa perlu mamnipulasi data
+
+Jenis Fungsi
+Fungsi bawaan adalah fungsi sederhana yg sudah diimplementasikan di server SQL
+fungsi fungsi ini memungkinkan kita melakukan berbagai jenis manipulasi pada data.
+fungsi bawaan pada dasarnya dapat dikategorikan ke dalam kategori yg paling sering digunakan :
+
+String Functions - beroperasi pada tipe data String
+SELECT `movie_id`,`title`, UCASE(`title`) From `movies`
+dibutuhkan string sebagai parameter dan mengubah semua huruf menjadi huruf besar.
+script yg ditunjukan menunjukkan penggunaan fungsi "UCASE"
+
+Numeri Functions - tipe data numerik
+
+SELECT FLOOT(23/6) AS `floor_result`
+floor - fungsi ini menghilangkan desimal dari angka dan membulatkannya ke angka terendah terdekat
+
+SELECT ROUND(23/6) AS `round_result`
+Round - fungsi ini membulatkan angka dengan tempat desimal ke bilangan bulat terdekat
+
+SELECT RAND() AS `random_result`
+RAnd - fungsi ini digunakan untuk menghasilkan angka acar, nilainya berubah setiap kali fungsi dipanggil
+Date functions - tipe data tanggal
+
+SELECT COUNT (`movie_id`) FROM `movierentals `WHERE `movie_id` = 2
+Fungsi Count mengembalikan jumlah total nilai dalam field tertentu
+
+COUNT adalah implementasi khusus dari fungsi COUNT yg mengembalikan hitungan semua baris dalam tabel tertentu. COUNT juga akan menghitung Nulls dan duplikat
+
+Fungi MIN
+mengembalikan nilai terkecil di bidang tabel yg ditentukan
+SELECT MIN (`year_released`) FROM `movies`
+
+Fungi MAX
+mengembalikan nilai terbesar di bidang tabel yg ditentukan
+SELECT MAX (`year_released`) FROM `movies`
+
+FUngsi SUM
+mengem,balikan jumlah semua nilai di kolom yg ditentukan. SUM bekerja pada bidang numerik saja. nilai NUll dikecualikan
+SELECT SUM(`amount_paid`) FROM `payments`;
+
+Fungsi AVG
+SQL avg mengembalikan nilai rata rata nilai dalam kolom tertentu. sama seperti fungsi SUM, ini hanya berfungsi pada data numerik
+SELECT AVG(`amount_paid`) FROM `payments`;
+
+
+aggregate function beroperasi pada semua tipe data diatas dan menghasilkan kumpulan hasil yg diringkas
+wild cart adalah karakter yg membantu mencari data dengan kriteria yg komplex wild card digunakan bersamaan dengan operator perbandingan like atau not like
+
+
+//WILDCard
+WILDCard simbol % persentase
+karakter persentase digunakan untuk menentukan/mencocokan karakter mulai dari  (0) atau lebih karakter, ini memiliki sintaks dasar berikut.
+WildCard underscore
+memcocokan tepat 1 karakter
+
+
+SELECT statenebts.. WHERE fieldname LIKE 'xxx%';
+Penyataan SELECT.." adalah perintah SQL SELECT standar.
+
+"WHERE"
+adalah kata kunci yg digunakan untuk menerapkan filter.
+
+"LIKE"
+adlah operator perbandungan yg digunakan bersama dengan wildcard
+
+"XXX"
+adalah setiap pola wal yg ditentukan seperti satu karakter atau lebih dan "%" cicij dengan sejumlah karakter mulai dari nol (0)
+
+SELECT * FROM movies WHERE year LIKE '200_';
+akan menampilkan file dengan year 200 diikuti anggka bebas
+
+SELECT * FROM movies WHERE year NOT LIKE '200_';
+akan menampilkan file dengan year selain 200 diikuti anggka bebas, seperti 2010,2012..
+
+
+download navicat
